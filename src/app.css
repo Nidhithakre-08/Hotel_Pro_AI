@@ -1,0 +1,79 @@
+/* ---------- shared form controls & buttons ---------- */
+.btn-primary,.btn-light,.btn-danger,.book-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:8px;padding:13px 18px;font-size:14px;font-weight:800;cursor:pointer;transition:.18s}
+.btn-primary{background:#214b3b;color:#fff}.btn-primary:hover:not(:disabled){background:#2b6450}
+.btn-light{background:#eef2ec;color:#2d4b3d;border:1px solid #dfe6dc}.btn-light:hover{background:#e3eae0}
+.btn-danger{background:#b4443b;color:#fff}.btn-danger:hover:not(:disabled){background:#9a362e}
+.btn-primary:disabled,.btn-danger:disabled,.book-btn:disabled{opacity:.55;cursor:not-allowed}
+.btn-primary.full{width:100%;margin-top:14px}
+.book-btn{background:#214b3b;color:#fff;padding:10px 16px;font-size:13px}.book-btn:hover:not(:disabled){background:#2b6450}
+.sign-in-btn,.sign-up-btn{display:inline-flex;align-items:center;gap:7px;border-radius:8px;padding:9px 14px;font-size:13px;font-weight:800;border:1px solid #d9e2d6;background:#fff;color:#2d4b3d}
+.sign-up-btn{background:#214b3b;color:#fff;border-color:#214b3b}
+.top-alert{background:#fbeceb;color:#8f2f28;padding:12px 37px;font-size:14px;font-weight:700}.top-alert button{margin-left:10px;border:0;background:#8f2f28;color:#fff;border-radius:6px;padding:5px 10px;font-weight:800}
+.form-alert{background:#fbeceb;color:#8f2f28;border:1px solid #f0c9c5;border-radius:8px;padding:11px 13px;font-size:13.5px;font-weight:700;margin:12px 0}
+.info-box{background:#eef6ee;color:#2e5a40;border-radius:8px;padding:14px;font-size:14px;margin:6px 0 14px}
+.form-actions{display:flex;justify-content:flex-end;gap:10px;margin-top:18px}.form-actions.between{justify-content:space-between;align-items:center}
+.confirm-msg{font-size:15px;line-height:1.6;color:#4b5b52;margin:4px 0 6px}
+.fld-label{display:block;font-size:11.5px;letter-spacing:1.1px;color:#79847d;margin-bottom:8px;font-weight:800}
+.fld-error{color:#b4443b;font-size:12.5px;font-weight:700}
+
+/* ---------- modal ---------- */
+.hp-backdrop{position:fixed;inset:0;background:#10251ccc;z-index:60;display:flex;align-items:flex-start;justify-content:center;padding:28px 16px;overflow:auto;backdrop-filter:blur(4px)}
+.hp-modal{width:min(560px,100%);background:#fff;border-radius:16px;padding:26px 28px;box-shadow:0 30px 90px #0004;margin:auto;animation:modal-in .2s ease-out}
+.hp-modal.wide{width:min(760px,100%)}
+.hp-modal-head{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:16px}
+.hp-modal-head h2{font-family:'Playfair Display',serif;font-size:27px;margin:0;color:#223a2f}
+.hp-x{width:36px;height:36px;display:grid;place-items:center;border:0;background:#f0f3ee;border-radius:50%;color:#4b5b52;cursor:pointer}.hp-x:hover{background:#e3e9e0}
+
+/* ---------- forms ---------- */
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0}
+.form-grid label,.adm-form label{display:flex;flex-direction:column;gap:7px;font-size:11.5px;letter-spacing:1.1px;color:#79847d;font-weight:800}
+.form-grid input,.form-grid select,.form-grid textarea,.adm-form input,.adm-form select,.adm-form textarea,.img-input input[type=text]{width:100%;border:1.5px solid #dde5da;background:#fbfcfa;border-radius:8px;padding:12px;font-size:14.5px;color:#2b3d33;outline:0;letter-spacing:0}
+.form-grid input:focus,.form-grid select:focus,.form-grid textarea:focus,.adm-form input:focus,.adm-form select:focus,.adm-form textarea:focus{border-color:#5f9a80;background:#fff}
+.form-grid textarea,.adm-form textarea{min-height:84px;resize:vertical;font-family:inherit}
+.span2,.full{grid-column:1/-1}
+
+/* ---------- booking flow ---------- */
+.stepper{display:flex;gap:8px;margin:2px 0 18px;flex-wrap:wrap}
+.stepper span{display:flex;align-items:center;gap:8px;font-size:13px;color:#9aa49d;font-weight:800;padding:6px 12px 6px 6px;border-radius:30px;background:#f3f6f1}
+.stepper b{width:24px;height:24px;border-radius:50%;display:grid;place-items:center;background:#dfe6dc;color:#fff;font-size:12px}
+.stepper .on{background:#e4efe6;color:#214b3b}.stepper .on b{background:#214b3b}.stepper .past b{background:#5f9a80}.stepper .past{color:#5f9a80}
+.flow-room{display:flex;gap:14px;align-items:center;padding-bottom:14px;border-bottom:1px solid #e9ede6}
+.flow-room img{width:104px;height:82px;object-fit:cover;border-radius:9px}.flow-room small{color:#7d8981;font-size:12.5px}
+.flow-room h3{font-family:'Playfair Display',serif;font-size:19px;margin:4px 0;color:#263b2e}
+.pay-methods{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0 4px}
+.pay-methods button{display:flex;align-items:center;gap:10px;border:1.5px solid #dde5da;background:#fff;border-radius:10px;padding:13px;font-size:14px;font-weight:800;color:#4b5b52;cursor:pointer;text-align:left}
+.pay-methods button.on{border-color:#214b3b;background:#eef6ee;color:#214b3b}
+.price-box{border-top:1px solid #e9ede6;margin-top:10px;padding-top:10px}
+.price-box>div{display:flex;justify-content:space-between;padding:7px 0;font-size:14px;color:#6d7b73}.price-box b{color:#33473b}
+.price-box .total{border-top:1px solid #e9ede6;margin-top:6px;padding-top:12px;font-size:17px;color:#223a2f}.price-box .total b{font-size:20px;color:#214b3b}
+.success-box{text-align:center;padding:6px 0 4px}
+.success-tick{width:66px;height:66px;border-radius:50%;background:#e4f2e6;color:#2f8a52;display:grid;place-items:center;margin:0 auto 12px}
+.success-box h3{font-family:'Playfair Display',serif;font-size:23px;margin:0}.success-box p{color:#6d7b73;font-size:14.5px;margin:6px 0 14px}
+.success-code{background:#f3f6f1;border:1px dashed #b9c8b6;border-radius:10px;padding:12px;font-size:12px;letter-spacing:1.4px;color:#79847d;margin-bottom:12px}.success-code strong{display:block;font-size:24px;color:#214b3b;letter-spacing:2px;margin-top:4px}
+.success-box small{display:block;margin-top:10px;color:#8a948e;font-size:13px}
+.kv{display:flex;justify-content:space-between;gap:14px;padding:8px 0;font-size:14px;color:#6d7b73;align-items:center;text-align:right}.kv span{text-align:left}.kv b{color:#2d4237;max-width:62%;word-break:break-word}
+.kv.total{border-top:1px solid #e9ede6;margin-top:4px;padding-top:12px;font-size:16px}.kv.total b{color:#214b3b;font-size:19px}
+.detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.detail-card{background:#f8faf7;border:1px solid #e8ece5;border-radius:12px;padding:16px}.detail-card h4{margin:0 0 8px;font-size:15px;color:#223a2f;display:flex;align-items:center;gap:8px}.detail-card.span2{grid-column:1/-1}
+
+/* ---------- pills ---------- */
+.pill{display:inline-flex;align-items:center;gap:6px;border-radius:20px;padding:4px 10px;font-size:12px;font-weight:800;white-space:nowrap}.pill i{width:7px;height:7px;border-radius:50%;background:currentColor}
+.pill-ok{background:#e4f2e6;color:#2a7a47}.pill-info{background:#e3eef8;color:#2b6490}.pill-warn{background:#fcf1dc;color:#9a6a12}.pill-bad{background:#fbe6e4;color:#b0392f}.pill-done{background:#ecefea;color:#5d6a62}
+
+/* ---------- hotel & room cards ---------- */
+.hotel-hero{height:340px}.hotel-hero h1{font-size:46px;margin:12px 0 10px}.hotel-hero .hero-content p{font-size:14px}
+.back-link{display:inline-flex;align-items:center;gap:6px;background:#ffffff22;color:#fff;border:1px solid #ffffff55;border-radius:20px;padding:6px 12px;font-size:13px;font-weight:800;margin-bottom:14px;backdrop-filter:blur(6px)}
+.hotel-about{background:#fff;border:1px solid #e8ece5;border-radius:12px;padding:18px 20px;margin-bottom:28px}.hotel-about p{margin:0 0 12px;font-size:15px;line-height:1.7;color:#55655c}
+.chip-row{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px}.chip-row span{background:#eef3ec;color:#3b5a49;border-radius:6px;padding:4px 9px;font-size:12px;font-weight:800;display:inline-flex;align-items:center;gap:5px}.chip-row.big span{font-size:13.5px;padding:6px 11px}
+.room-unavailable .room-image{filter:grayscale(.85) brightness(.85)}.room-unavailable .room-info{opacity:.75}
+.sold-out{position:absolute;inset:auto 0 0 0;background:#8f2f28d9;color:#fff;text-align:center;padding:8px;font-size:13px;font-weight:800}
+.room-subtitle{display:flex;align-items:center;gap:4px}
+.booking-sub{font-size:14px;color:#7d8981;margin-top:4px}
+.booking-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}.booking-actions button{display:inline-flex;align-items:center;gap:5px;background:transparent;border:0;color:#2d6049;font-size:13px;font-weight:800;padding:4px 0}.booking-actions .danger{color:#b4443b}
+.tabs-row{margin-bottom:18px}
+.booking-meta span{align-items:center}
+@media(max-width:680px){.form-grid,.detail-grid,.pay-methods{grid-template-columns:1fr}.hp-modal{padding:20px 16px}.top-alert{padding:12px 14px}.hotel-hero h1{font-size:34px}.sign-up-btn{display:none}}
+@media print{.sidebar,.topbar,.hp-backdrop .hp-x,.form-actions,.footer{display:none!important}.hp-backdrop{position:static;background:#fff;padding:0}.main-area{margin:0}}
+
+/* ---------- image input ---------- */
+.img-input-row{display:flex;gap:14px;align-items:flex-start}.img-preview{width:120px;height:90px;border-radius:10px;background:#eef2ec;display:grid;place-items:center;color:#8a948e;overflow:hidden;flex-shrink:0}.img-preview img{width:100%;height:100%;object-fit:cover}
+.img-input-actions{flex:1;display:flex;flex-direction:column;gap:8px}.img-input-buttons{display:flex;gap:8px;flex-wrap:wrap}.img-input-buttons .btn-light{padding:8px 12px;font-size:13px}
